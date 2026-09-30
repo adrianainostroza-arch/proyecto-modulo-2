@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Alke Wallet - Estilos de Login Completos
+   Especificaciones: 
+   - Fondo celeste claro
+   - Letras negras (#000000)
+   - Contenedor rectangular gris perfectamente centrado
+   ========================================================================== */
+
+/* Reset general y tipografía */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000; /* Fuerza el color de letra negro en todo el documento */
+}
+
+/* Cuerpo de la página: Configuración para centrado absoluto */
+body {
+  background-color: #bae6fd; /* Fondo celeste claro */
+  display: flex;             /* Activa el modelo Flexbox */
+  justify-content: center;   /* Centra el contenedor horizontalmente */
+  align-items: center;       /* Centra el contenedor verticalmente */
+  height: 100vh;             /* Obliga al body a ocupar el 100% del alto de la pantalla */
+}
+
+/* Contenedor rectangular de color gris */
+.login-container {
+  background-color: #e5e7eb; /* Color gris de fondo */
+  padding: 30px;
+  border-radius: 4px;        /* Bordes rectangulares limpios */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave para dar profundidad */
+  width: 100%;
+  max-width: 420px;          /* Ancho máximo de la tarjeta de login */
+  border: 1px solid #d1d5db;  /* Borde gris sutil */
+}
+
+/* Título principal */
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Etiquetas de los campos */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Campos de entrada (Inputs) */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  background-color: #ffffff; /* Fondo blanco para los textos de entrada */
+}
+
+/* Estado de foco en los inputs al hacer clic */
+input:focus {
+  outline: none;
+  border-color: #0284c7; /* Cambio a un celeste más oscuro e interactivo */
+  box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2);
+}
+
+/* Fila contenedora de los botones */
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* Estilos compartidos de los botones */
+button {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Botón Aceptar (Estilo destacado) */
+#btnAceptar {
+  background-color: #93c5fd; /* Tono celeste que combina con el fondo */
+}
+
+#btnAceptar:hover {
+  background-color: #60a5fa; /* Oscurece levemente al pasar el cursor */
+}
+
+/* Botón Cancelar */
+#btnCancelar {
+  background-color: #f3f4f6; /* Gris claro para diferenciarlo */
+}
+
+#btnCancelar:hover {
+  background-color: #d1d5db; /* Oscurece levemente al pasar el cursor */
+}
+
+/* Contenedor dinámico de mensajes de error */
+.error {
+  color: #b91c1c; /* Mantiene un rojo oscuro para alertas garantizando la legibilidad */
+  font-size: 0.85rem;
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 600;
+}

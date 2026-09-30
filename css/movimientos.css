@@ -1,0 +1,104 @@
+/* Estilos Generales de la Pantalla */
+body {
+    background-color: #b3e5fc; /* Todo el fondo celeste */
+    color: #000000; /* Letras negras */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Alinea verticalmente: primero el cuadro, luego los botones */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* El cuadro contenedor blanco */
+#transactionsContent {
+    background-color: #ffffff; /* Fondo blanco exclusivo para el cuadro */
+    border: 1px solid #81d4fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #000000;
+    border-bottom: 2px solid #4fc3f7;
+    padding-bottom: 10px;
+}
+
+/* Estilos de la Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    color: #000000;
+}
+
+th {
+    background-color: #4fc3f7;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f8ff; 
+}
+
+/* Formato de colores para montos */
+.monto-ingreso {
+    color: #2e7d32 !important;
+    font-weight: bold;
+}
+
+.monto-egreso {
+    color: #c62828 !important;
+    font-weight: bold;
+}
+
+/* Contenedor de Botones (Separado en el fondo celeste) */
+.contenedor-botones {
+    width: 100%;
+    max-width: 600px; /* Misma anchura del cuadro blanco para alineación perfecta */
+    display: flex;
+    justify-content: space-between; /* "Volver atrás" a la izquierda, "Cerrar sesión" a la derecha */
+    margin-top: 25px; /* Espaciado visible para notar que están afuera */
+    box-sizing: border-box;
+}
+
+/* Botones */
+button {
+    background-color: #0288d1;
+    color: #ffffff; /* Texto blanco para legibilidad en los botones */
+    border: none;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #01579b;
+}
+
+#btnCerrarSesion {
+    background-color: #37474f; /* Color gris/azul oscuro contrastante */
+}
+
+#btnCerrarSesion:hover {
+    background-color: #212121;
+}

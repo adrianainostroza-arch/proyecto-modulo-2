@@ -1,0 +1,41 @@
+
+body {
+  background-color: skyblue; /* Fondo azul cielo */
+  color: black;              /* Texto negro */
+  font-family: calibri, sans-serif;
+  text-align: center;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+h1 {
+  color: black;               /* Azul marino */
+}
+
+p {
+  color: black;            /* Gris tenue */
+}
+
+button {
+  background-color: blue;    /* Azul */
+  color: white;              /* Texto blanco */
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: greenyellow; 
+}
+
+img.logo {
+  display: block;          /* asegura que se comporte como bloque */
+  margin: 0 auto 20px;     /* centra horizontalmente y da espacio abajo */
+  max-width: 25%;        /* limita el ancho máximo */
+  height: auto;            /* mantiene proporción sin deformar */
+}
+

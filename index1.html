@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Alke Wallet</title>
+  <link rel="stylesheet" href="css/index1.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Bienvenido a su Alke wallet de seguridad</h1>
+    <form id="loginForm">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required placeholder="Cualquier formato de correo válido">
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" required placeholder="Cualquier formato de contraseña válido">
+
+      <div class="buttons">
+        <button type="submit" id="btnAceptar">Aceptar</button>
+        <button type="button" id="btnCancelar">Cancelar</button>
+      </div>
+    </form>
+    <div id="errorMsg" class="error"></div>
+  </div>
+
+  <script src="js/index1.js"></script>
+</body>
+</html>

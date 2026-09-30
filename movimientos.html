@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alke Wallet - Últimos Movimientos</title>
+    <link rel="stylesheet" href="css/movimientos.css">
+</head>
+<body>
+
+    <div id="transactionsContent">
+        <h4>Últimos Movimientos</h4>
+
+        <table id="tablaMovimientos">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Tipo</th>
+                    <th>Detalle</th>
+                    <th>Monto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Las transacciones se cargarán aquí con jQuery -->
+            </tbody>
+        </table>
+
+        <p id="mensajeSinMovimientos" style="display: none;">No hay movimientos recientes.</p>
+
+        <div>
+            <button type="button" onclick="history.back()">Volver atrás</button>
+            <button type="button" id="btnCerrarSesion">Cerrar sesión</button>
+        </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/movimientos.js"></script>
+</body>
+</html>

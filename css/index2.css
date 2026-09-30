@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a8d8ea;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wallet-container {
+    background-color: transparent;
+    border: none;
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+}
+
+.wallet-header h1 {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.balance {
+    color: #000000;
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.credit-card-sim {
+    background-color: #5b9ec9;
+    border-radius: 10px;
+    padding: 40px 20px;
+    margin-bottom: 25px;
+}
+
+.card-brand {
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.navbar-right a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 15px 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.navbar-right a:hover {
+    background-color: #a8d8ea;
+}
